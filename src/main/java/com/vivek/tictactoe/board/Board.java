@@ -36,14 +36,14 @@ public class Board {
 		else if(checkLine(0,4,8, 1)) 	return 1;
 		else if(checkLine(2,4,6, 1)) 	return 1;
 		
-		else if(checkLine(0,1,2, 1)) 	return 0;
-		else if(checkLine(3,4,5, 1)) 	return 0;
-		else if(checkLine(6,7,8, 1)) 	return 0;
-		else if(checkLine(0,3,6, 1)) 	return 0;
-		else if(checkLine(1,4,7, 1)) 	return 0;
-		else if(checkLine(2,5,8, 1)) 	return 0;
-		else if(checkLine(0,4,8, 1)) 	return 0;
-		else if(checkLine(2,4,6, 1)) 	return 0;
+		else if(checkLine(0,1,2, 0)) 	return 0;
+		else if(checkLine(3,4,5, 0)) 	return 0;
+		else if(checkLine(6,7,8, 0)) 	return 0;
+		else if(checkLine(0,3,6, 0)) 	return 0;
+		else if(checkLine(1,4,7, 0)) 	return 0;
+		else if(checkLine(2,5,8, 0)) 	return 0;
+		else if(checkLine(0,4,8, 0)) 	return 0;
+		else if(checkLine(2,4,6, 0)) 	return 0;
 		
 		return -1;
 	}

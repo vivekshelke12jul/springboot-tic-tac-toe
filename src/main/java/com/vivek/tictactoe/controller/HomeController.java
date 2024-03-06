@@ -24,6 +24,14 @@ public class HomeController {
 		this.board = board;
 	}
 	
+	
+	@GetMapping("/reset")
+	public Integer[] resetBoardState() {
+		System.out.println("inside reset board");
+		board.resetArr();
+		return board.getArr();
+	}
+	
 	@GetMapping("/state")
 	@ResponseStatus(HttpStatus.OK)
 	public Integer[] getBoardState() {

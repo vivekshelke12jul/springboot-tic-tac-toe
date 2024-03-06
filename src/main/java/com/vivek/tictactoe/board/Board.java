@@ -19,6 +19,10 @@ public class Board {
 		return this.arr;
 	}
 	
+	public void resetArr() {
+		Arrays.fill(this.arr, -1);
+	}
+	
 	public boolean checkLine(int p1, int p2, int p3, int player) {
 		if(arr[p1]==player && arr[p2]==player && arr[p3]==player) {
 			return true;
@@ -47,4 +51,5 @@ public class Board {
 		
 		return -1;
 	}
+
 }
